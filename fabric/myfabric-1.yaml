@@ -1,0 +1,24 @@
+apiVersion: fabrics.eda.nokia.com/v1
+kind: Fabric
+metadata:
+  name: myfabric-1
+  namespace: eda
+spec:
+  leafs:
+    leafNodeSelectors:
+      - eda.nokia.com/role=leaf
+  spines:
+    spineNodeSelectors:
+      - eda.nokia.com/role=spine
+  interSwitchLinks:
+    linkSelectors:
+      - eda.nokia.com/role=interSwitch
+    unnumbered: IPv6
+  systemPoolIPv4: systemipv4-pool
+  underlayProtocol:
+    protocols:
+      - EBGP
+    bgp:
+      asnPool: asn-pool
+  overlayProtocol:
+    protocol: EBGP
