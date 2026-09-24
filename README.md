@@ -1,4 +1,4 @@
-                                    # Nokia EDA – First Steps
+#                                           Nokia EDA – First Steps
 
 Intent resources applied to the Try EDA Digital Twin (3x SR Linux 26.7.1: leaf1, leaf2, spine1) running in GitHub Codespaces, managed from VS Code with the Nokia EDA extension.
 
